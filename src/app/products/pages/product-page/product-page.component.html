@@ -13,7 +13,10 @@
         </div>
         
         <div class="col-auto">
-            <span>Algo de info</span>
+            <span customLabel
+            [color]="color"
+            [errors]="myForm.get('name')?.errors"
+            >Temporal</span>
         </div>
 
     </div>
